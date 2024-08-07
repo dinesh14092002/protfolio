@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="front-end-developer.webp" type="image/x-icon">
     <title> My Protfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
@@ -20,6 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         body {
@@ -293,7 +295,7 @@
 
         </section>
         <section>
-            <div id="certification">
+            <div id="certification" data-aos="fade-up">
                 <h4>Certification</h4>
                 <ul>
                     <li class="li-item">12-jan-2022 - "Introduction in IoT" in CISCO <a href="cisco_certification.jpg"
@@ -319,7 +321,7 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="projects">
+            <div class="projects" data-aos="fade-up">
                 <div class="project">
                     <h4>Title :“Industrial Booking portal for students”</h4>
                     <h5>ABSTRACT</h5>
@@ -381,7 +383,7 @@
                         <li> No redundancy</li>
 
                     </ul>
-                    <div class="container-fluid">
+                    <div class="container-fluid" data-aos="fade-up">
                         <div class="row">
                             <div class="col-sm-4">
                                 <img src="screen1.png" alt="" srcset="" class="img-size">
@@ -411,7 +413,7 @@
             </div>
         </section>
         <section>
-            <div id="intern">
+            <div id="intern" data-aos="fade-up">
                 <h2>Internship's</h2>
                 <h4>Completed internship in AVA Software pvt .Ltd as a " Software trainee - intern "</h4>
                 <h5>Position and Duration:</h5>
@@ -446,7 +448,7 @@
                 </ul>
             </div>
             <hr style="border: 1px solid black;">
-            <div>
+            <div data-aos="fade-up">
                 <h4>Completed internship in Narayana Hrudayalaya Limited as a "Digital Marketing - intern"</h4>
                 <h5>Position and Duration:</h5>
                 <ul>
@@ -474,7 +476,7 @@
                 </ul>
             </div>
         </section>
-        <section id="academics">
+        <section id="academics" data-aos="fade-up">
             <h2>Academics</h2>
             <h5>Bachelor of Information Technology ( june-2020 – 2023 )</h5>
             <ul>
@@ -507,6 +509,9 @@
 
         </footer>
     </div>
+    <script>
+     AOS.init();
+    </script>
 
 </body>
 
