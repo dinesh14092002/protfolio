@@ -208,23 +208,18 @@
 
 <body>
     <div>
-        <!-- <header> -->
-        <nav class="navbar navbar-expand-sm  navbar-dark">
+          <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid" data-aos="fade-right">
-                <div>
+                <a class="navbar-brand" href="#">
                     <img src="profile.jpg" class="rounded-circle" alt="" srcset="" width="100px" height="100px">
-                </div>
-                <div>
-                    <h5 style="margin-left: 3px; color:white">Dineshkumar</h5>
-
-                </div>
-                <!-- <h3 style="margin-left: 30px; color:white" >Dineshkumar</h3> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
+                </a>
+                <span class="navbar-text text-white" style="font-family: 'Lobster', cursive;">Dineshkumar</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar" data-aos="fade-right">
-                    <ul class="navbar-nav me-auto">
+                     <ul class="navbar-nav me-auto">
                         <!-- <h3 style="margin-left: 30px; color:white">Dineshkumar</h3> -->
                         <li class="nav-item ">
                             <a class="nav-link text-white" href="#about">About</a>
@@ -246,15 +241,11 @@
                         </li>
 
                     </ul>
-                    <div>
-                        <img src="night.png" alt="">
-                        <button class="btn btn-dark" type="button" onclick="fun()">dark mode</button>
-                    </div>
+                    <button class="btn btn-dark" onclick="toggleDarkMode()">Dark Mode</button>
                 </div>
             </div>
         </nav>
-
-
+    </header>
 
         <!-- </header> -->
 
