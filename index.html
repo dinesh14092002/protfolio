@@ -6,49 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="front-end-developer.webp" type="image/x-icon">
     <title> My Protfolio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Scripts -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <style>
-         body {
-            font-family: 'Roboto', sans-serif;
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background-image.jpg'); /* Replace with your background image URL *
-             background-color: #f7f7f7;
+            background-color: #f7f7f7;
             color: #333;
-            transition: background-color 0.3s, color 0.3s;
+
         }
 
-    
-         header {
+        header {
             background-color: #2c3e50;
             color: white;
-            padding: 1em;
-        }
-
-        .navbar-brand img {
-            border-radius: 50%;
-            max-width: 80px;
-            height: auto;
+            text-align: left;
+            padding: 2em;
+            position: relative;
+            height: 100px;
         }
 
         section {
-            padding: 2em 1em;
-            margin: 1em auto;
-            max-width: 800px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #bdbdbd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         .skills {
@@ -142,37 +139,33 @@
             background-color: rgb(244, 32, 32);
         }
 
-       .dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
+        .dark-mode {
+            background-color: black;
+            color: white;
         }
 
         button {
             cursor: pointer;
         }
 
-     
+        nav {
+            background-color: #3a7d8a !important;
+        }
 
         html {
             scroll-behavior: smooth;
         }
 
-          .scroll-btn {
+        .scroll-btn {
             position: fixed;
             bottom: 50px;
             right: 20px;
             z-index: 99;
             cursor: pointer;
             padding: 10px;
-            border: none;
-            background-color: #3498db;
-            color: white;
+            border: 1px solid black;
+            background-color: white;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .scroll-btn:hover {
-            background-color: #2980b9;
         }
 
         .intern-btn {
@@ -189,52 +182,47 @@
             text-align: justify;
         }
 
-          nav {
-            background-color: rgba(58, 125, 138, 0.9);
-            backdrop-filter: blur(10px);
-        }
+        .nav-link:hover {
+            color: red !important;
+            border-bottom: 1px solid red;
 
-        .navbar-nav .nav-link {
-            color: #ffffff;
-            margin: 0 10px;
-            transition: color 0.3s, border-bottom 0.3s;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #f1c40f;
-            border-bottom: 2px solid #f1c40f;
         }
     </style>
 
-       <script>
-         document.addEventListener('DOMContentLoaded', () => {
-            AOS.init();
-
-            document.querySelector('.scroll-btn').addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-
-      function toggleDarkMode() {
+    <script>
+        function fun() {
             document.body.classList.toggle('dark-mode');
         }
+
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
     </script>
 </head>
 
 <body>
     <div>
-          <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <div class="container-fluid" data-aos="fade-right">
-                <a class="navbar-brand" href="#">
+        <!-- <header> -->
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <div class="container-fluid">
+                <div>
                     <img src="profile.jpg" class="rounded-circle" alt="" srcset="" width="100px" height="100px">
-                </a>
-                <span class="navbar-text text-white" style="font-family: 'Lobster', cursive;">Dineshkumar</span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                </div>
+                <div>
+                    <h5 style="margin-left: 3px; color:white">Dineshkumar</h5>
+
+                </div>
+                <!-- <h3 style="margin-left: 30px; color:white" >Dineshkumar</h3> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar" data-aos="fade-right">
-                     <ul class="navbar-nav me-auto">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto">
                         <!-- <h3 style="margin-left: 30px; color:white">Dineshkumar</h3> -->
                         <li class="nav-item ">
                             <a class="nav-link text-white" href="#about">About</a>
@@ -256,18 +244,20 @@
                         </li>
 
                     </ul>
-                         <button class="btn btn-dark" onclick="toggleDarkMode()">Dark Mode</button>
-               
+                    <div>
+                        <img src="night.png" alt="">
+                        <button class="btn btn-dark" type="button" onclick="fun()">dark mode</button>
+                    </div>
                 </div>
             </div>
         </nav>
-    </header>
+
+
 
         <!-- </header> -->
 
         <section id="about">
             <h2>About Me</h2>
-            <div data-aos="fade-right">
             <p>
                 Hi, I'm Dineshkumar, a passionate front-end web developer with a focus on creating modern and
                 user-friendly
@@ -278,11 +268,10 @@
                 I am a enthusiastic person and I can adapt to any working condition. I am a honest person and I will
                 try to give my 100 % in what I do
             </p>
-            </div>
         </section>
 
         <section id="skills">
-            <div data-aos="fade-right">
+            <div>
                 <h3>skills</h3>
                 <p class="lang"><span style="font-weight: bold;">Programming Languages :</span> C,C++,HTML, CSS,
                     JavaScript,Python,Django,React js, JSON</p>
@@ -295,7 +284,7 @@
             </div>
 
         </section>
-        <section data-aos="fade-right">
+        <section>
             <h4>Webiner</h4>
             <ul>
                 <li style="margin: 0%;">Emerging Trends in IOT and Wireless communication ( feb 2021)</li>
@@ -304,7 +293,7 @@
 
         </section>
         <section>
-            <div id="certification" data-aos="fade-right">
+            <div id="certification">
                 <h4>Certification</h4>
                 <ul>
                     <li class="li-item">12-jan-2022 - "Introduction in IoT" in CISCO <a href="cisco_certification.jpg"
@@ -330,11 +319,11 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="projects" data-aos="fade-right">
+            <div class="projects">
                 <div class="project">
                     <h4>Title :“Industrial Booking portal for students”</h4>
                     <h5>ABSTRACT</h5>
-                    <p data-aos="fade-right">In this web application fully provide Industrial Visit Information and offering Confirmation
+                    <p>In this web application fully provide Industrial Visit Information and offering Confirmation
                         details. So this Website Company and student have to register this application. The role of
                         company is to add Industrial Visit providing company details and also add Industrial Visit
                         details
@@ -351,7 +340,7 @@
                         details
                         and all other details.</p>
                     <h5>EXISTING SYSTEM </h5>
-                    <p data-aos="fade-right">
+                    <p>
 
                         In the existing system student can directly visit to the company and request about the
                         Industrial Visit purpose. It’s difficult to reach the each company visiting process and
@@ -374,7 +363,7 @@
                         <li> No automatic messaging option available</li>
                     </ul>
                     <h5>PROPOSED SYSTEM</h5>
-                    <p data-aos="fade-right">
+                    <p>
                         This proposed Web application system is designed in the favor of the college student,
                         which helps them to get easy Industrial Visit approval intimation such as company name and
                         Industrial Visit schedule information to their students through this web application .It
@@ -392,7 +381,7 @@
                         <li> No redundancy</li>
 
                     </ul>
-                    <div class="container-fluid" data-aos="fade-right">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-4">
                                 <img src="screen1.png" alt="" srcset="" class="img-size">
@@ -416,13 +405,13 @@
 
 
 
-            
+                <button class="scroll-btn" onclick="scrollToTop()"><span>&#8593;</span></button>
 
 
             </div>
         </section>
         <section>
-            <div id="intern" data-aos="fade-right">
+            <div id="intern">
                 <h2>Internship's</h2>
                 <h4>Completed internship in AVA Software pvt .Ltd as a " Software trainee - intern "</h4>
                 <h5>Position and Duration:</h5>
@@ -457,7 +446,7 @@
                 </ul>
             </div>
             <hr style="border: 1px solid black;">
-            <div data-aos="fade-right">
+            <div>
                 <h4>Completed internship in Narayana Hrudayalaya Limited as a "Digital Marketing - intern"</h4>
                 <h5>Position and Duration:</h5>
                 <ul>
@@ -485,7 +474,7 @@
                 </ul>
             </div>
         </section>
-        <section id="academics" data-aos="fade-right">
+        <section id="academics">
             <h2>Academics</h2>
             <h5>Bachelor of Information Technology ( june-2020 – 2023 )</h5>
             <ul>
@@ -507,7 +496,7 @@
 
 
 
-        <section id="contact" data-aos="fade-right">
+        <section id="contact">
             <h2>Contact</h2>
             <p> <img src="mail.png" alt="" srcset=""> You can reach me at dineshkumarsep142002@gmail.com</p>
             <p><img src="icons8-phone-24.png" alt="" srcset=""> +91 9600268192</p>
@@ -517,11 +506,7 @@
             <p>&copy; 2024 Dineshkumar. All rights reserved.</p>
 
         </footer>
-            <button class="scroll-btn">Top</button>
     </div>
-    <script>
-     AOS.init();
-    </script>
 
 </body>
 
