@@ -25,14 +25,14 @@
 
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
 
         }
-        h2{
+        h2,h3,h4{
             color:blue;
         }
 
@@ -51,6 +51,7 @@
             border: 1px solid #bdbdbd;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            color:white;
         }
 
         .skills {
@@ -217,7 +218,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-         function toggleDarkMode() {
+         function fun() {
             document.body.classList.toggle('dark-mode');
         }
 
@@ -266,7 +267,7 @@
 
                     </ul>
                     <div>
-                        <img src="night.png" alt="">
+                       
                         <button class="btn btn-dark" type="button" onclick="fun()">dark mode</button>
                     </div>
                 </div>
